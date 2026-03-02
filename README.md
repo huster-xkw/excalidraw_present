@@ -3,6 +3,8 @@
 这是一个基于 [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) 的二次开发版本，
 我在原项目基础上完成了自定义改动，并整理为可直接开源发布的仓库结构。
 
+在线体验地址：https://xkw.deepextractai.com/excalidraw
+
 ## 项目说明
 
 - 保留了 Excalidraw Monorepo 结构（`packages/` + `excalidraw-app/` + `examples/`）
