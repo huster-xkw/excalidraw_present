@@ -1,0 +1,40 @@
+.page-flip-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  will-change: transform, opacity;
+  background: var(--island-bg-color, #fff);
+}
+
+// 向前：从右往左滑出
+.page-flip-forward {
+  animation: slide-out-left 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+// 向后：从左往右滑出
+.page-flip-backward {
+  animation: slide-out-right 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

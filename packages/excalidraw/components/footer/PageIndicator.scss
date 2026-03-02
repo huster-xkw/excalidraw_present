@@ -1,0 +1,41 @@
+.page-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0 0.4rem;
+  user-select: none;
+  pointer-events: var(--ui-pointerEvents);
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: var(--border-radius-md);
+    background: var(--color-surface-mid);
+    color: var(--color-on-surface);
+    cursor: pointer;
+    font-size: 0.85rem;
+    line-height: 1;
+    padding: 0;
+
+    &:hover {
+      background: var(--color-surface-high);
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: default;
+    }
+  }
+
+  &__label {
+    font-size: 0.75rem;
+    color: var(--color-on-surface);
+    white-space: nowrap;
+    min-width: 3rem;
+    text-align: center;
+  }
+}
